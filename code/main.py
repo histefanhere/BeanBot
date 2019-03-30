@@ -93,11 +93,6 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    try:
-        print(servers[message.server].channels[message.channel].prev_message.content)
-    except Exception as e:
-        pass
-
     text = message.content
     if text.startswith(".bean"):
         member = [x for x in message.server.members if text[len(".bean")+1:] in (x.name, x.id, str(x), x.nick)]
