@@ -107,3 +107,4 @@ venv.bak/
 data/token.txt
 workplace.sublime-project
 workplace.sublime-workspace
+data/servers.dat
